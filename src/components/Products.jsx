@@ -20,8 +20,8 @@ const Products = ({ cat, filters, sort }) => {
       try {
         const res = await axios.get(
           cat
-            ? `http://api-sandy-one.vercel.app/api/products?category=${cat}`
-            : 'http://api-sandy-one.vercel.app/api/products'
+            ? `https://api-sandy-one.vercel.app/api/products?category=${cat}`
+            : 'https://api-sandy-one.vercel.app/api/products'
         );
         setProducts(res.data);
       } catch (err) {}
